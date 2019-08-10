@@ -1,5 +1,5 @@
 //var rightNow = new Date();
-var rightNow = new Date(2019, 5, 17, 2, 58);
+var rightNow = new Date(2019, 5, 17, 9, 25);
 var today = new Date(
   rightNow.getFullYear(),
   rightNow.getMonth(),
@@ -27,22 +27,30 @@ var targetKey;
 //for each key...
 for (var [key, value] of monMap.entries()) {
   console.log(key + " = " + value);
+  console.log(rightNow.getTime());
+  console.log(today.getTime() + value);
   //if now is less than now + the next value in the array
-  if (rightNow.getMilliseconds() < value) {
+  if (rightNow.getTime() < today.getTime() + value) {
     target = new Date(today.getTime() + value);
-    console.log("TARGET " + target);
+    console.log("TARGET " + target.getTime());
     targetKey = key;
     console.log(target.getHours() + " " + target.getMinutes());
     break;
   }
 }
 
+var timeUntil = new Date(
+  today.getTime() + (target.getTime() - rightNow.getTime())
+);
+console.log(timeUntil);
+
 //Returns a string, block starts in x min
 var finalString =
   targetKey +
   " in " +
-  (target.getHours() - rightNow.getHours()) +
+  timeUntil.getHours() +
   ":" +
-  (target.getMinutes() - rightNow.getMinutes());
+  timeUntil.getMinutes() +
+  ".";
 
 document.getElementById("time").innerHTML = finalString;
