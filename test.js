@@ -5,22 +5,39 @@ var today = new Date(
   rightNow.getMonth(),
   rightNow.getDate()
 );
-
-var monArray = [["A Block starts", 30000000], ["A Block ends", 33000000]];
+//Map of values, [block name, time in ms]
+var monArray = [
+  ["A Block starts", 30000000],
+  ["A Block ends", 33600000],
+  ["B Block starts", 33900000],
+  ["B Block ends", 37500000],
+  ["T Block starts", 37800000],
+  ["T Block ends", 39600000],
+  ["D Block [LUNCH] starts", 39900000],
+  ["D Block ends", 45300000],
+  ["E Block starts", 45600000],
+  ["E Block ends", 49200000],
+  ["G Block starts", 49500000],
+  ["G Block ends", 53400000]
+];
 var monMap = new Map(monArray);
-console.log(rightNow + " " + today);
+console.log(rightNow + " and " + today);
 var target;
 var targetKey;
+//for each key...
 for (var [key, value] of monMap.entries()) {
   console.log(key + " = " + value);
-  if (rightNow.getMilliseconds() < today.getTime() + value) {
+  //if now is less than now + the next value in the array
+  if (rightNow.getMilliseconds() < value) {
     target = new Date(today.getTime() + value);
+    console.log("TARGET " + target);
     targetKey = key;
     console.log(target.getHours() + " " + target.getMinutes());
     break;
   }
 }
 
+//Returns a string, block starts in x min
 var finalString =
   targetKey +
   " in " +
