@@ -27,7 +27,7 @@ if (rightNow.getDay() == 1) {
 } else if (rightNow.getDay() == 3) {
 } else if (rightNow.getDay() == 4) {
 } else if (rightNow.getDay() == 5) {
-} 
+}
 
 //Map of values, [block name, time in ms]
 
@@ -56,12 +56,25 @@ var timeUntil = new Date(
 console.log(timeUntil);
 
 //Returns a string, block starts in x min
-var finalString =
-  targetKey +
+var finalString = targetKey + " in ";
+
+if (timeUntil.getHours() > 1) {
+  finalString += timeUntil.getHours() + " hours";
+} else if (timeUntil.getHours() == 1) {
+  finalString += timeUntil.getHours() + " hour";
+}
+
+if (timeUntil.getMinutes() > 1) {
+  finalString += timeUntil.getMinutes() + " minutes.";
+} else if (timeUntil.getMinutes() == 1) {
+  finalString += timeUntil.getMinutes() + "minute.";
+} else if (timeUntil.getMinutes() === 0) finalString += ".";
+
+/*targetKey +
   " in " +
   timeUntil.getHours() +
   ":" +
   timeUntil.getMinutes() +
-  ".";
+  ".";*/
 
 document.getElementById("time").innerHTML = finalString;
