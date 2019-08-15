@@ -27,7 +27,7 @@ if (rightNow.getDay() == 1) {
 } else if (rightNow.getDay() == 3) {
 } else if (rightNow.getDay() == 4) {
 } else if (rightNow.getDay() == 5) {
-}
+} 
 
 //Map of values, [block name, time in ms]
 
