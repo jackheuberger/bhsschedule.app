@@ -1,5 +1,5 @@
 //var rightNow = new Date();
-var rightNow = new Date(2019, 5, 18, 9, 25);
+var rightNow = new Date(/*2019, 5, 17, 9, 20, 0*/);
 var today = new Date(
   rightNow.getFullYear(),
   rightNow.getMonth(),
@@ -86,6 +86,9 @@ if (timeUntil.getMinutes() > 1) {
   finalString += timeUntil.getMinutes() + " minutes.";
 } else if (timeUntil.getMinutes() == 1) {
   finalString += timeUntil.getMinutes() + " minute.";
-} else if (timeUntil.getMinutes() === 0) finalString += ".";
+} else if (timeUntil.getMinutes() === 0 && timeUntil.getHours() === 0){
+  finalString += " less than one minute."
+}
+else if (timeUntil.getMinutes() === 0) finalString += ".";
 
 document.getElementById("time").innerHTML = finalString;
