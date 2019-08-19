@@ -25,7 +25,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">BHS Schedule</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -41,29 +41,39 @@
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="#">Main Building <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">9th Greenough</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">9th OLS</a>
           </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="https://github.com/jackheuberger/bhstime">Source Code</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid center">
+    <div
+      class="jumbotron jumbotron-fluid center"
+      style="background-color: lightskyblue"
+    >
       <div class="container">
-        <h1 class="display-3">10/11/12 BHS</h1>
+        <h1 class="display-3">Main BHS Building</h1>
         <p class="lead" id="time">Test</p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#mainImage" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Full Schedule
+        </a>
+        <div class="collapse" id="mainImage">
+          <img src="MainSchedule.png">
+        </div>
       </div>
     </div>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

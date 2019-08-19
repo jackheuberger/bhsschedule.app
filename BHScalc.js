@@ -1,5 +1,5 @@
 //var rightNow = new Date();
-var rightNow = new Date(2019, 5, 17, 9, 25);
+var rightNow = new Date(/*2019, 5, 17, 9, 20, 0*/);
 var today = new Date(
   rightNow.getFullYear(),
   rightNow.getMonth(),
@@ -24,6 +24,18 @@ if (rightNow.getDay() == 1) {
     ["G Block ends", 53400000]
   ];
 } else if (rightNow.getDay() == 2) {
+  dayArray = [
+    ["C Block starts", 30000000],
+    ["C Block ends", 33900000],
+    ["E Block starts", 34200000],
+    ["E Block ends", 38100000],
+    ["D Block [LUNCH] starts", 38400000],
+    ["D Block [LUNCH] ends", 44100000],
+    ["F Block starts", 44400000],
+    ["F Block starts", 48300000],
+    ["G Block starts", 48600000],
+    ["G Block ends", 52500000]
+  ];
 } else if (rightNow.getDay() == 3) {
 } else if (rightNow.getDay() == 4) {
 } else if (rightNow.getDay() == 5) {
@@ -50,6 +62,9 @@ for (var [key, value] of dayMap.entries()) {
   }
 }
 
+console.log(today.getTime() + "gettime today");
+console.log(target.getTime() + "gettime target");
+
 var timeUntil = new Date(
   today.getTime() + (target.getTime() - rightNow.getTime())
 );
@@ -64,17 +79,16 @@ if (timeUntil.getHours() > 1) {
   finalString += timeUntil.getHours() + " hour";
 }
 
+if (timeUntil.getHours() > 0 && timeUntil.getMinutes() > 0)
+  finalString += " and ";
+
 if (timeUntil.getMinutes() > 1) {
   finalString += timeUntil.getMinutes() + " minutes.";
 } else if (timeUntil.getMinutes() == 1) {
-  finalString += timeUntil.getMinutes() + "minute.";
-} else if (timeUntil.getMinutes() === 0) finalString += ".";
-
-/*targetKey +
-  " in " +
-  timeUntil.getHours() +
-  ":" +
-  timeUntil.getMinutes() +
-  ".";*/
+  finalString += timeUntil.getMinutes() + " minute.";
+} else if (timeUntil.getMinutes() === 0 && timeUntil.getHours() === 0){
+  finalString += " less than one minute."
+}
+else if (timeUntil.getMinutes() === 0) finalString += ".";
 
 document.getElementById("time").innerHTML = finalString;
