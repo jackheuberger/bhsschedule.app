@@ -91,4 +91,4 @@ if (timeUntil.getMinutes() > 1) {
 }
 else if (timeUntil.getMinutes() === 0) finalString += ".";
 
-document.getElementById("time").innerHTML = finalString;
+document.getElementById("bhsTime").innerHTML = finalString;
