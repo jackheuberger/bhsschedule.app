@@ -10,8 +10,10 @@ var blueWeek = true;
 
 if(blueWeek){
   document.getElementsByClassName("bhsJumbo")[0].style.backgroundColor = "#5FA8D3";
+  console.log("It's A week!");
 } else {
   document.getElementsByClassName("bhsJumbo")[0].style.backgroundColor = "#FF6F59";
+  console.log("It's B week!");
 }
 
 var dayArray;
