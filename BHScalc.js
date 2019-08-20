@@ -1,10 +1,18 @@
 //var rightNow = new Date();
-var rightNow = new Date(/*2019, 5, 17, 9, 20, 0*/);
+//year, month, day, hour, min, second
+var rightNow = new Date(/*2019, 5, 17, 10, 23, 0*/);
 var today = new Date(
   rightNow.getFullYear(),
   rightNow.getMonth(),
   rightNow.getDate()
 );
+var blueWeek = false;
+
+if(blueWeek){
+  document.getElementsByClassName("bhsJumbo")[0].style.backgroundColor = "#5FA8D3";
+} else {
+  document.getElementsByClassName("bhsJumbo")[0].style.backgroundColor = "#FF6F59";
+}
 
 var dayArray;
 
@@ -39,6 +47,8 @@ if (rightNow.getDay() == 1) {
 } else if (rightNow.getDay() == 3) {
 } else if (rightNow.getDay() == 4) {
 } else if (rightNow.getDay() == 5) {
+} else {
+
 }
 
 //Map of values, [block name, time in ms]
@@ -83,7 +93,7 @@ if (timeUntil.getHours() > 0 && timeUntil.getMinutes() > 0)
   finalString += " and ";
 
 if (timeUntil.getMinutes() > 1) {
-  finalString += timeUntil.getMinutes() + " minutes.";
+  finalString += timeUntil.getMinutes() + 1 + " minutes.";
 } else if (timeUntil.getMinutes() == 1) {
   finalString += timeUntil.getMinutes() + " minute.";
 } else if (timeUntil.getMinutes() === 0 && timeUntil.getHours() === 0){
