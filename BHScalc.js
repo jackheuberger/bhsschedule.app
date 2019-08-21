@@ -63,7 +63,7 @@ function calcTime(dayMap, id) {
     finalString += " and ";
 
   if (timeUntil.getMinutes() > 1) {
-    finalString += timeUntil.getMinutes() + " minutes.";
+    finalString += timeUntil.getMinutes() + 1 + " minutes.";
   } else if (timeUntil.getMinutes() == 1) {
     finalString += timeUntil.getMinutes() + " minute.";
   } else if (timeUntil.getMinutes() === 0 && timeUntil.getHours() === 0) {
