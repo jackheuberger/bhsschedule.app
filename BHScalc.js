@@ -1,6 +1,6 @@
 //var rightNow = new Date();
 //                   year, month, day, hour, min, second
-var rightNow = new Date(2019, 7, 21, 8, 59, 0);
+var rightNow = new Date(/*2019, 7, 21, 8, 59, 0*/);
 var today = new Date(
   rightNow.getFullYear(),
   rightNow.getMonth(),
