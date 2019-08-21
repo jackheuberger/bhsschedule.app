@@ -75,76 +75,76 @@ if(getAWeek()){
     ];
   }
 
-  //B WEEK
-  else {
-    if (rightNow.getDay() == 1) {
-      dayArray = [
-        ["A Block starts", 30000000],
-        ["A Block ends", 33900000],
-        ["T Block starts", 34200000],
-        ["T Block ends", 36000000],
-        ["C Block starts", 36300000],
-        ["C Block ends", 39900000],
-        ["E Block [LUNCH] starts", 40200000],
-        ["E Block ends", 45900000],
-        ["F Block starts", 46200000],
-        ["F Block ends", 49500000],
-        ["G Block starts", 49800000],
-        ["G Block ends", 53400000]
-      ];
-    } else if (rightNow.getDay() == 2) {
-      dayArray = [
-        ["A Block starts", 30000000],
-        ["A Block ends", 33900000],
-        ["B Block starts", 34200000],
-        ["B Block ends", 38100000],
-        ["C Block [LUNCH] starts", 38400000],
-        ["C Block [LUNCH] ends", 44100000],
-        ["D Block starts", 44400000],
-        ["D Block starts", 48300000],
-        ["F Block starts", 48600000],
-        ["F Block ends", 52200000]
-      ];
-    } else if (rightNow.getDay() == 3) {
-      dayArray = [
-        ["A Block starts", 30000000],
-        ["A Block ends", 33600000],
-        ["B Block starts", 33900000],
-        ["B Block ends", 37500000],
-        ["X Block starts", 37800000],
-        ["X Block ends", 39600000],
-        ["E Block [LUNCH] starts", 39900000],
-        ["E Block [LUNCH] ends", 45300000],
-        ["F Block starts", 45600000],
-        ["F Block ends", 49200000],
-        ["G Block starts", 49500000],
-        ["G Block ends", 53100000]
-      ]
-    } else if (rightNow.getDay() == 4) {
-      dayArray = [
-        ["C Block starts", 30000000],
-        ["C Block ends", 33900000],
-        ["D Block starts", 34200000],
-        ["D Block ends", 38100000],
-        ["F Block [LUNCH] starts", 38400000],
-        ["F Block [LUNCH] ends", 40500000],
-        ["G Block starts", 42900000],
-        ["G Block ends", 43200000]
-      ]
-    } else if (rightNow.getDay() == 5) {
-      dayArray = [
-        ["A Block starts", 30600000],
-        ["A Block ends", 34500000],
-        ["B Block starts", 34800000],
-        ["B Block ends", 38700000],
-        ["C Block starts", 39000000],
-        ["C Block ends", 42900000],
-        ["D Block [LUNCH] starts", 43200000],
-        ["D Block [LUNCH] ends", 48900000],
-        ["E Block starts", 49200000],
-        ["E Block ends", 52800000]
-      ];
-    }
+  
+} //B WEEK
+else {
+  if (rightNow.getDay() == 1) {
+    dayArray = [
+      ["A Block starts", 30000000],
+      ["A Block ends", 33900000],
+      ["T Block starts", 34200000],
+      ["T Block ends", 36000000],
+      ["C Block starts", 36300000],
+      ["C Block ends", 39900000],
+      ["E Block [LUNCH] starts", 40200000],
+      ["E Block ends", 45900000],
+      ["F Block starts", 46200000],
+      ["F Block ends", 49500000],
+      ["G Block starts", 49800000],
+      ["G Block ends", 53400000]
+    ];
+  } else if (rightNow.getDay() == 2) {
+    dayArray = [
+      ["A Block starts", 30000000],
+      ["A Block ends", 33900000],
+      ["B Block starts", 34200000],
+      ["B Block ends", 38100000],
+      ["C Block [LUNCH] starts", 38400000],
+      ["C Block [LUNCH] ends", 44100000],
+      ["D Block starts", 44400000],
+      ["D Block starts", 48300000],
+      ["F Block starts", 48600000],
+      ["F Block ends", 52200000]
+    ];
+  } else if (rightNow.getDay() == 3) {
+    dayArray = [
+      ["A Block starts", 30000000],
+      ["A Block ends", 33600000],
+      ["B Block starts", 33900000],
+      ["B Block ends", 37500000],
+      ["X Block starts", 37800000],
+      ["X Block ends", 39600000],
+      ["E Block [LUNCH] starts", 39900000],
+      ["E Block [LUNCH] ends", 45300000],
+      ["F Block starts", 45600000],
+      ["F Block ends", 49200000],
+      ["G Block starts", 49500000],
+      ["G Block ends", 53100000]
+    ]
+  } else if (rightNow.getDay() == 4) {
+    dayArray = [
+      ["C Block starts", 30000000],
+      ["C Block ends", 33900000],
+      ["D Block starts", 34200000],
+      ["D Block ends", 38100000],
+      ["F Block [LUNCH] starts", 38400000],
+      ["F Block [LUNCH] ends", 40500000],
+      ["G Block starts", 42900000],
+      ["G Block ends", 43200000]
+    ]
+  } else if (rightNow.getDay() == 5) {
+    dayArray = [
+      ["A Block starts", 30600000],
+      ["A Block ends", 34500000],
+      ["B Block starts", 34800000],
+      ["B Block ends", 38700000],
+      ["C Block starts", 39000000],
+      ["C Block ends", 42900000],
+      ["D Block [LUNCH] starts", 43200000],
+      ["D Block [LUNCH] ends", 48900000],
+      ["E Block starts", 49200000],
+      ["E Block ends", 52800000]
+    ];
   }
 }
 var dayMap = new Map(dayArray);
