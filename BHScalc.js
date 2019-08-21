@@ -1,6 +1,6 @@
 //var rightNow = new Date();
 //                   year, month, day, hour, min, second
-var rightNow = new Date(2019, 7, 21, 8, 59, 0);
+var rightNow = new Date(/*2019, 7, 21, 8, 59, 0*/);
 var today = new Date(
   rightNow.getFullYear(),
   rightNow.getMonth(),
@@ -23,6 +23,7 @@ if (aWeek) {
 }
 
 function calcTime(dayMap, id) {
+  console.log(id + " called function!!!")
   console.log(rightNow + " is rn. today is " + today);
   var target;
   var targetKey;
@@ -41,8 +42,8 @@ function calcTime(dayMap, id) {
     }
   }
 
-  console.log(today.getTime() + "gettime today");
-  console.log(target.getTime() + "gettime target");
+  console.log(today.getTime() + " gettime today");
+  console.log(target.getTime() + " gettime target");
 
   var timeUntil = new Date(
     today.getTime() + (target.getTime() - rightNow.getTime())
