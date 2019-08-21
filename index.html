@@ -89,9 +89,9 @@
         <a class="btn btn-primary" data-toggle="collapse" href="#mainImage" role="button" aria-expanded="false" aria-controls="mainImage">
           View Full Schedule
         </a>
-        <div class="collapse" id="mainImage">
-          <img src="MainSchedule.png">
-        </div>
+      </div>
+      <div class="collapse" id="mainImage">
+        <img src="MainSchedule.png">
       </div>
     </div>
 
@@ -100,30 +100,26 @@
         <div class="container">
           <h1 class="display-4">9th Grade BHS</h1>
           <p class="lead" id="9thTime">Test</p>
-          <a class="btn btn-primary" data-toggle="collapse" href="#9thBHS" role="button" aria-expanded="false" aria-controls="#9thBHS">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#freshBHS" aria-expanded="false" aria-controls="freshBHS">
             View Full Schedule
-          </a>
-          <div class="collapse" id="9thBHS">
-            <img src="9thBHSSchedule.png">
-          </div>
+          </button>
+          
         </div>
       </div>
-      
+
       <div class="col-6 text-center">
         <div class="container">
           <h1 class="display-4">9th Grade OLS</h1>
           <p class="lead" id="OLStime">Test</p>
-          <a class="btn btn-primary" data-toggle="collapse" href="9thOLS" role="button" aria-expanded="false" aria-controls="9thOLS">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#freshOLS" aria-expanded="false" aria-controls="freshOLS">
             View Full Schedule
-          </a>
-          <div class="collapse" id="9thOLS">
-            <img src="9thOLSSchedule.png">
-          </div>
+          </button>
           </div>
         </div>
         
         
     </div>
+    
     
 
     <!-- Optional JavaScript -->
@@ -147,5 +143,11 @@
     <script src="BHSschedule.js"></script>
     <script src="9thSchedule.js"></script>
     <script src="OLSschedule.js"></script>
+    <div class="collapse text-center" id="freshBHS">
+      <img src="9thBHSSchedule.png">
+    </div>
+    <div class="collapse text-center" id="freshOLS">
+      <img src="9thOLSSchedule.png">
+    </div>
   </body>
 </html>

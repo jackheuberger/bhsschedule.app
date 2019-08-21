@@ -12,6 +12,10 @@ function getAWeek(){
   return aWeek;
 }
 
+function buttonClick(){
+  console.log("CLick!");
+}
+
 if (aWeek) {
   document.getElementsByClassName("bhsJumbo")[0].style.backgroundColor =
     "#5FA8D3";
