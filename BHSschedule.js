@@ -121,14 +121,14 @@ else {
     ]
   } else if (rightNow.getDay() == 4) {
     dayArray = [
-      ["C Block starts", 30000000],
-      ["C Block ends", 33900000],
-      ["D Block starts", 34200000],
-      ["D Block ends", 38100000],
-      ["F Block [LUNCH] starts", 38400000],
-      ["F Block [LUNCH] ends", 40500000],
-      ["G Block starts", 42900000],
-      ["G Block ends", 43200000]
+      ["C Block starts", 34800000],
+      ["C Block ends", 38700000],
+      ["D Block starts", 39000000],
+      ["D Block ends", 42900000],
+      ["F Block [LUNCH] starts", 43200000],
+      ["F Block [LUNCH] ends", 49200000],
+      ["G Block starts", 53100000],
+      ["G Block ends", 53400000]
     ]
   } else if (rightNow.getDay() == 5) {
     dayArray = [
