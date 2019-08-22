@@ -52,7 +52,8 @@ if (getAWeek()) {
       ["B Block ends", 34500000],
       ["A Block starts", 34800000],
       ["A Block ends", 39000000],
-      ["X Block starts [TRAVEL TO BHS]", 40500000][("X Block ends", 42900000)],
+      ["X Block starts [TRAVEL TO BHS]", 40500000],
+      [("X Block ends", 42900000)],
       ["G Block [LUNCH] starts", 43200000],
       ["G Block [LUNCH] ends", 48900000],
       ["F Block starts", 49200000],
@@ -145,6 +146,7 @@ else {
     ];
   }
 }
-var dayMap = new Map(dayArray);
+
+var OLSMap = new Map(dayArray);
 console.log("9th OLS calc");
-calcTime(dayMap, "OLStime");
+calcTime(OLSMap, "OLStime");
