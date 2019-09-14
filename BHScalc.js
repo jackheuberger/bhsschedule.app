@@ -8,10 +8,10 @@ var today = new Date(
 );
 
 //THIS IS IT
-var aWeek = true;
+var aWeek = false;
 
 
-function getAWeek(){
+function getAWeek() {
   return aWeek;
 }
 
@@ -27,7 +27,7 @@ if (aWeek) {
 }
 
 function calcTime(dayMap, id) {
-  if(rightNow.getDay() != 6 && rightNow.getDay() != 7){
+  if (rightNow.getDay() != 6 && rightNow.getDay() != 7) {
     console.log(id + " called function!!!")
     console.log(rightNow + " is rn. today is " + today);
     var target;
@@ -46,27 +46,27 @@ function calcTime(dayMap, id) {
         break;
       }
     }
-  
+
     console.log(today.getTime() + " gettime today");
     console.log(target.getTime() + " gettime target");
-  
+
     var timeUntil = new Date(
       today.getTime() + (target.getTime() - rightNow.getTime())
     );
     console.log(timeUntil);
-  
+
     //Returns a string, block starts in x min
     var finalString = targetKey + " in ";
-  
+
     if (timeUntil.getHours() > 1) {
       finalString += timeUntil.getHours() + " hours";
     } else if (timeUntil.getHours() == 1) {
       finalString += timeUntil.getHours() + " hour";
     }
-  
+
     if (timeUntil.getHours() > 0 && timeUntil.getMinutes() > 0)
       finalString += " and ";
-  
+
     if (timeUntil.getMinutes() > 1) {
       finalString += timeUntil.getMinutes() + 1 + " minutes.";
     } else if (timeUntil.getMinutes() == 1) {
@@ -74,11 +74,11 @@ function calcTime(dayMap, id) {
     } else if (timeUntil.getMinutes() === 0 && timeUntil.getHours() === 0) {
       finalString += " less than one minute.";
     } else if (timeUntil.getMinutes() === 0) finalString += ".";
-  
+
     document.getElementById(id).innerHTML = finalString;
   } else {
     console.log("WEEKEND")
-  document.getElementById(id).innerHTML = "Have a good weekend!";
+    document.getElementById(id).innerHTML = "Have a good weekend!";
   }
-  
+
 }
