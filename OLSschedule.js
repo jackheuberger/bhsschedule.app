@@ -95,7 +95,7 @@ else {
   } else if (rightNow.getDay() == 2) {
     dayArray = [
       ["B Block starts", 28800000],
-      ["B Block ends", 327000009],
+      ["B Block ends", 32700000],
       ["A Block starts", 33000000],
       ["A Block ends", 36900000],
       ["C Block [LUNCH] starts", 37200000],
