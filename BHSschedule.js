@@ -1,7 +1,7 @@
 /*This file is just to break up the schedules into multiple files, and to be more efficient and use a function to
 calculate the times of each separate schedule.*/
 var dayArray;
-if(getAWeek()){
+if (getAWeek()) {
   // A WEEK
   if (rightNow.getDay() == 1) {
     dayArray = [
@@ -11,7 +11,9 @@ if(getAWeek()){
       ["B Block ends", 37500000],
       ["T Block starts", 37800000],
       ["T Block ends", 39600000],
-      ["D Block [LUNCH] starts", 39900000],
+      ["D Block [Lunch B] starts", 39900000],
+      ["D ends @ 12:05", 39900000],
+      ["[LUNCH A STARTS], D ends @ 12:05", 39900000],
       ["D Block [LUNCH] ends", 45300000],
       ["E Block starts", 45600000],
       ["E Block ends", 49200000],
