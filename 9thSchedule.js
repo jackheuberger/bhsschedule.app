@@ -12,7 +12,7 @@ if(getAWeek()){
       ["T Block starts [TRAVEL TO OLS]", 38700000],
       ["T Block ends", 40500000],
       ["D Block starts", 40740000],
-      ["D ends @ 12:53, Lunch A starts", 46380000],
+      ["D ends @ 12:53, Lunch A starts", 42600000],
       ["D ends @ 12:53, Lunch A ends", 44100000],
       ["D ends @ 12:53, Lunch B starts", 44580000],
       ["D Block ends", 46380000],
