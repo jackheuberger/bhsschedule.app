@@ -23,17 +23,17 @@ if(getAWeek()){
     ];
   } else if (rightNow.getDay() == 2) {
     dayArray = [
-      ["C Block starts [BEGIN AT OLS]", 30000000],
-      ["C Block ends", 33600000],
-      ["T or H Block starts", 33840000],
+      ["C Block starts [BEGIN AT OLS]", 29700000],
+      ["C Block ends", 33300000],
+      ["T or H Block starts", 33540000],
       ["T or H Block ends", 35640000],
       ["E Block starts", 35880000],
       ["E Block ends", 39480000],
       ["D Block starts", 39720000],
       ["D ends @ 12:53, Lunch A starts", 41760000],
-      ["D ends @ 12:53, Lunch A ends", 43200000],
+      ["D ends @ 12:53, Lunch A ends", 43260000],
       ["D ends @ 12:53, Lunch B starts", 43560000],
-      ["D Block starts", 45360000],
+      ["D Block ends", 45360000],
       ["F Block starts", 45600000],
       ["F Block ends", 49200000],
       ["G Block starts", 49500000],
