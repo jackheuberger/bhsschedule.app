@@ -1,9 +1,11 @@
 /*This file is just to break up the schedules into multiple files, and to be more efficient and use a function to
 calculate the times of each separate schedule.*/
-var dayArray;
+var dayArray = [];
+console.log("today is " + rightNow.getDay())
 if (getAWeek()) {
   // A WEEK
   if (rightNow.getDay() == 1) {
+    //MONDAY A
     dayArray = [
       ["A Block starts", 30000000],
       ["A Block ends", 33600000],
@@ -21,6 +23,7 @@ if (getAWeek()) {
       ["G Block ends", 53400000]
     ];
   } else if (rightNow.getDay() == 2) {
+    //TUESDAY A
     dayArray = [
       ["C Block starts", 30000000],
       ["C Block ends", 33900000],
@@ -46,7 +49,7 @@ if (getAWeek()) {
       ["[Lunch A has started] E Block starts", 40800000],
       ["E ends @ 12:45, Lunch A ends", 42300000],
       ["E ends @ 12:45, Lunch B starts", 44100000],
-      ["E Block ends", 45900000]
+      ["E Block ends", 45900000],
       ["D Block starts", 46200000],
       ["D Block ends", 49500000],
       ["G Block starts", 49800000],
@@ -168,6 +171,6 @@ else {
     ];
   }
 }
-var dayMap = new Map(dayArray);
+dayMap = new Map(dayArray);
 console.log("BHS main calc. The BHS schedule is " + dayArray);
 calcTime(dayMap, "bhsTime");
