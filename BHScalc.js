@@ -1,5 +1,5 @@
 //var rightNow = new Date();
-//                   year, month, day, hour, min, second
+//                     year, month, day, hour, min, second
 var rightNow = new Date(/*2019, 7, 21, 8, 59, 0*/);
 var today = new Date(
   rightNow.getFullYear(),
@@ -53,7 +53,7 @@ function calcTime(dayMap, id) {
     var timeUntil = new Date(
       today.getTime() + (target.getTime() - rightNow.getTime())
     );
-    console.log(timeUntil);
+    console.log(timeUntil + " time until");
 
     //Returns a string, block starts in x min
     var finalString = targetKey + " in ";
@@ -74,6 +74,8 @@ function calcTime(dayMap, id) {
     } else if (timeUntil.getMinutes() === 0 && timeUntil.getHours() === 0) {
       finalString += " less than one minute.";
     } else if (timeUntil.getMinutes() === 0) finalString += ".";
+
+    console.log(finalString + "IS FINALSTRING");
 
     document.getElementById(id).innerHTML = finalString;
   } else {
