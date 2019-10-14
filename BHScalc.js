@@ -8,7 +8,7 @@ var today = new Date(
 );
 
 //THIS IS IT
-var aWeek = true;
+var aWeek = false;
 
 
 function getAWeek() {
