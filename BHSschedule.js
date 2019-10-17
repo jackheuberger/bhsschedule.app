@@ -151,7 +151,7 @@ else {
       ["F ends @ 1:40, Lunch A starts", 45000000],
       ["F ends @ 1:40, Lunch A ends", 46800000],
       ["F Block ends", 49200000],
-      ["G Block starts", 53100000],
+      ["G Block starts", 46200000],
       ["G Block ends", 53400000]
     ]
   } else if (rightNow.getDay() == 5) {
