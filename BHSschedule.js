@@ -2,7 +2,7 @@
 calculate the times of each separate schedule.*/
 var dayArray = [];
 console.log("today is " + rightNow.getDay())
-if (getAWeek()) {
+if (getAWeek() == 0) {
     // A WEEK
     if (rightNow.getDay() == 1) {
         //MONDAY A
@@ -90,7 +90,7 @@ if (getAWeek()) {
         ];
     }
 } //B WEEK
-else {
+else if (getAWeek() == 1) {
     if (rightNow.getDay() == 1) {
         dayArray = [
             ["A Block starts", 30000000],
