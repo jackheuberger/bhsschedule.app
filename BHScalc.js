@@ -8,7 +8,7 @@ var today = new Date(
 );
 
 //THIS IS IT
-// 0 = A, 1 = B
+// 0 = A, 1 = B, 2 = Special
 var aWeek = 0;
 
 
@@ -24,6 +24,10 @@ if (aWeek == 0) {
 } else if (aWeek == 1) {
     document.getElementsByClassName("bhsJumbo")[0].style.backgroundColor =
         "#FF6F59";
+    console.log("It's B week!");
+} else if (aWeek == 2) {
+    document.getElementsByClassName("bhsJumbo")[0].style.backgroundColor =
+        "#A0DE7C";
     console.log("It's B week!");
 }
 
