@@ -165,6 +165,50 @@ else if (getAWeek() == 1) {
             ["E Block ends", 52800000]
         ];
     }
+    //SPECIAL SCHEDULE
+} else if (getAWeek() == 2) {
+    if (rightNow.getDay() == 1) {
+        dayArray = [
+            ["A Block starts", 28800000],
+            ["A Block ends", 33000000],
+            ["B Block starts", 33300000],
+            ["B Block ends", 37500000],
+            ["C ends @ 12:05, Lunch B starts", 37800000],
+            ["C ends @ 12:05, Lunch B ends/Lunch A starts", 39300000],
+            ["C ends @ 12:05, Lunch A ends", 41100000],
+            ["C Block ends", 43500000],
+            ["F Block @ BHS starts", 44700000],
+            ["F Block ends", 48900000],
+            ["G Block starts", 49200000],
+            ["G Block ends", 53400000]
+        ];
+    }
+    if (rightNow.getDay() == 2) {
+        dayArray = [
+            ["A Block starts", 28800000],
+            ["A Block ends", 33000000],
+            ["T Block starts", 33300000],
+            ["T Block ends", 35400000],
+            ["E Block starts", 35700000],
+            ["E ends @ 11:40, Lunch starts", 38400000],
+            ["E ends @ 11:40, Lunch ends", 40200000],
+            ["E Block ends", 42000000],
+            ["F Block @ BHS starts", 43500000],
+            ["F Block ends", 47700000],
+            ["G Block starts", 48000000],
+            ["G Block ends", 52200000]
+        ];
+    }
+    if (rightNow.getDay() == 3) {
+        dayArray = [
+            ["C Block starts", 30000000],
+            ["C Block ends", 33300000],
+            ["D Block starts", 33600000],
+            ["D Block ends", 36900000],
+            ["E Block starts", 37200000],
+            ["E Block ends", 40500000]
+        ];
+    }
 }
 
 var OLSMap = new Map(dayArray);
