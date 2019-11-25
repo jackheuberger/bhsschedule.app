@@ -172,6 +172,51 @@ else if (getAWeek() == 1) {
             ["E Block ends", 54000000]
         ];
     }
+    //SPECIAL SCHEDULE
+} else if (getAWeek() == 2) {
+    if (rightNow.getDay() == 1) {
+        dayArray = [
+            ["A Block starts", 30000000],
+            ["A Block ends", 34200000],
+            ["B Block starts", 34500000],
+            ["B Block ends", 38100000],
+            ["C Block @ OLS starts", 39600000],
+            ["C ends @ 12:20, Lunch A starts", 41400000],
+            ["C ends @ 12:20, Lunch A ends", 42900000],
+            ["C ends @ 12:20, Lunch B starts", 43200000],
+            ["C Block ends", 45000000],
+            ["F Block starts", 45300000],
+            ["F Block ends", 49500000],
+            ["G Block starts", 49800000],
+            ["G Block ends", 54000000]
+        ];
+    }
+    if (rightNow.getDay() == 2) {
+        dayArray = [
+            ["A Block starts", 30000000],
+            ["A Block ends", 34200000],
+            ["T Block @ OLS starts", 35400000],
+            ["T Block ends", 37500000],
+            ["E Block starts", 37800000],
+            ["E ends @ 12:20, Lunch A starts", 40200000],
+            ["E ends @ 12:20, Lunch A ends/Lunch B starts", 42000000],
+            ["E Block ends", 44100000],
+            ["F Block starts", 44400000],
+            ["F Block ends", 49800000],
+            ["G Block starts", 48900000],
+            ["G Block ends", 53100000]
+        ];
+    }
+    if (rightNow.getDay() == 3) {
+        dayArray = [
+            ["C Block starts", 30000000],
+            ["C Block ends", 33300000],
+            ["D Block starts", 33600000],
+            ["D Block ends", 36900000],
+            ["E Block starts", 37200000],
+            ["E Block ends", 40500000]
+        ];
+    }
 }
 var dayMap = new Map(dayArray);
 console.log("9th main calc");
