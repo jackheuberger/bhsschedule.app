@@ -110,6 +110,7 @@ else if (getAWeek() == 1) {
             ["G Block starts", 50400000],
             ["G Block ends", 54000000]
         ];
+        
     } else if (rightNow.getDay() == 2) {
         dayArray = [
             ["A Block starts", 30000000],
