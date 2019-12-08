@@ -9,7 +9,7 @@ var today = new Date(
 
 //THIS IS IT
 // 0 = A, 1 = B, 2 = Special
-var aWeek = 1;
+var aWeek = 0;
 
 
 function getAWeek() {
