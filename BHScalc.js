@@ -14,7 +14,9 @@ const tags = [
     'Sag is Broke',
     'Shame on you',
     'The first time in a decade',
-    'Epstein didn\'t kill himself'
+    'Epstein didn\'t kill himself',
+    'Global Voice > Sag',
+    'Porco did nothing wrong'
 ];
 
 //THIS IS IT
