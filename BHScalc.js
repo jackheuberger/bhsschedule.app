@@ -16,7 +16,11 @@ const tags = [
     'The first time in a decade',
     'Epstein didn\'t kill himself',
     'Global Voice > Sag',
-    'Porco did nothing wrong'
+    'Shoutout Porco my schlime',
+    'Go tell Omer something good',
+    '*Surprised Pikachu*',
+    'wow. 😮 woOoOoOw. 😵 WOW. 😱 SO you guys are SO INTO 🙌🏻 yourselves 💅🏻, like, you are SO committed 💍💏 to CENSORING 🤐🚫 innocent people 👶🏻 that you’re just gonna go and try to get my patreon DELETED 🔥 now. oh, you have an OPINION 📝😡🙄',
+    'orange man bad'
 ];
 
 //THIS IS IT
