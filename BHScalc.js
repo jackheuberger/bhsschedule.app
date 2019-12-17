@@ -7,14 +7,19 @@ var today = new Date(
     rightNow.getDate()
 );
 
+const tags = [
+    'Hi Ryan Kirkey!',
+    'Hi Itai!!',
+    'Fuck the College Board!',
+    'Sag is Broke',
+    'Shame on you',
+    'The first time in a decade',
+    'Epstein didn\'t kill himself'
+];
+
 //THIS IS IT
 // 0 = A, 1 = B, 2 = Special
 var aWeek = 1;
-
-
-function getAWeek() {
-    return aWeek;
-}
 
 
 if (aWeek == 0) {
@@ -29,6 +34,17 @@ if (aWeek == 0) {
     document.getElementsByClassName("bhsJumbo")[0].style.backgroundColor =
         "#A0DE7C";
     console.log("It's a special week!!");
+}
+
+document.getElementById("tag").innerHTML = randomTag(tags);
+
+function randomTag(tags){
+    console.log("random tag")
+    return tags[Math.floor(Math.random() * tags.length)];
+}
+
+function getAWeek() {
+    return aWeek;
 }
 
 function calcTime(dayMap, id) {
