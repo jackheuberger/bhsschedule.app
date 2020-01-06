@@ -21,7 +21,6 @@ const tags = [
     '*Surprised Pikachu*',
     'wow. 😮 woOoOoOw. 😵 WOW. 😱 SO you guys are SO INTO 🙌🏻 yourselves 💅🏻, like, you are SO committed 💍💏 to CENSORING 🤐🚫 innocent people 👶🏻 that you’re just gonna go and try to get my patreon DELETED 🔥 now. oh, you have an OPINION 📝😡🙄',
     'orange man bad',
-    'bitches and commas',
     'red team won 2019',
     'no more 4 at a table',
     'hey mr. jones',
