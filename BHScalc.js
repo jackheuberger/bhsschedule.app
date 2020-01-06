@@ -14,7 +14,20 @@ const tags = [
     'Sag is Broke',
     'Shame on you',
     'The first time in a decade',
-    'Epstein didn\'t kill himself'
+    'Epstein didn\'t kill himself',
+    'Global Voice > Sag',
+    'Shoutout Porco my schlime',
+    'Go tell Omer something good',
+    '*Surprised Pikachu*',
+    'wow. 😮 woOoOoOw. 😵 WOW. 😱 SO you guys are SO INTO 🙌🏻 yourselves 💅🏻, like, you are SO committed 💍💏 to CENSORING 🤐🚫 innocent people 👶🏻 that you’re just gonna go and try to get my patreon DELETED 🔥 now. oh, you have an OPINION 📝😡🙄',
+    'orange man bad',
+    'red team won 2019',
+    'no more 4 at a table',
+    'hey mr. jones',
+    'don\'t take apush',
+    'hi krak man',
+    'rip juice he got drank',
+    'https://i.redd.it/tpictllznd541.jpg'
 ];
 
 //THIS IS IT
