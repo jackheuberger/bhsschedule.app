@@ -33,7 +33,7 @@ const tags = [
 
 //THIS IS IT
 // 0 = A, 1 = B, 2 = Special
-var aWeek = 1;
+var aWeek = 0;
 
 
 if (aWeek == 0) {
