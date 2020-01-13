@@ -103,7 +103,7 @@ else if (getAWeek() == 1) {
             ["E Block starts", 40920000],
             ["E ends @ 12:57, Lunch A starts", 42720000],
             ["E ends @ 12:57, Lunch A ends", 44220000],
-            ["E ends @ 12:57, Lunch B starts", 44820000]
+            ["E ends @ 12:57, Lunch B starts", 44820000],
             ["E Block ends", 46620000],
             ["F Block starts", 46800000],
             ["F Block ends", 50100000],
@@ -219,6 +219,7 @@ else if (getAWeek() == 1) {
         ];
     }
 }
+console.log(dayArray, 'DAY ARRAY')
 var dayMap = new Map(dayArray);
 console.log("9th main calc");
 calcTime(dayMap, "9thTime");
