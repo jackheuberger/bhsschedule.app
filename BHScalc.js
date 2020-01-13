@@ -1,6 +1,6 @@
 //var rightNow = new Date();
 //                     year, month, day, hour, min, second
-var rightNow = new Date( /*2019, 7, 21, 8, 59, 0*/ );
+var rightNow = new Date( /*2019, 7, 21, 8, 59, 0*/);
 var today = new Date(
     rightNow.getFullYear(),
     rightNow.getMonth(),
@@ -27,7 +27,7 @@ const tags = [
     'don\'t take apush',
     'hi krak man',
     'rip juice he got drank',
-    'https://i.redd.it/tpictllznd541.jpg'
+    'https://i.redd.it/wodr6tsssca41.jpg'
 ];
 
 //THIS IS IT
@@ -51,7 +51,7 @@ if (aWeek == 0) {
 
 document.getElementById("tag").innerHTML = randomTag(tags);
 
-function randomTag(tags){
+function randomTag(tags) {
     console.log("random tag")
     return tags[Math.floor(Math.random() * tags.length)];
 }
