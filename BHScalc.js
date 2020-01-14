@@ -27,7 +27,9 @@ const tags = [
     'don\'t take apush',
     'hi krak man',
     'rip juice he got drank',
-    'https://i.redd.it/wodr6tsssca41.jpg'
+    'https://i.redd.it/wodr6tsssca41.jpg',
+    'elbow grease is a social construct',
+    'mr. fischer is the superior Elon'
 ];
 
 //THIS IS IT
