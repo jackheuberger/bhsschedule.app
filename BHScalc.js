@@ -27,12 +27,12 @@ const tags = [
     'don\'t take apush',
     'hi krak man',
     'rip juice he got drank',
-    'https://i.redd.it/wodr6tsssca41.jpg'
+    'https://i.imgur.com/PoGoXoa.jpg'
 ];
 
 //THIS IS IT
 // 0 = A, 1 = B, 2 = Special
-var aWeek = 1;
+var aWeek = 0;
 
 
 if (aWeek == 0) {
