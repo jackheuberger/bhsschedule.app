@@ -28,7 +28,10 @@ const tags = [
     'hi krak man',
     'rip juice he got drank',
     'https://i.imgur.com/PoGoXoa.jpg',
-    'www.globalvoice.news'
+    'www.globalvoice.news',
+    'https://i.redd.it/wodr6tsssca41.jpg',
+    'elbow grease is a social construct',
+    'mr. fischer is the superior Elon'
 ];
 
 //THIS IS IT
