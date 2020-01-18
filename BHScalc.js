@@ -27,7 +27,8 @@ const tags = [
     'don\'t take apush',
     'hi krak man',
     'rip juice he got drank',
-    'https://i.imgur.com/PoGoXoa.jpg'
+    'https://i.imgur.com/PoGoXoa.jpg',
+    'www.globalvoice.news'
 ];
 
 //THIS IS IT
