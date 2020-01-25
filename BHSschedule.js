@@ -175,45 +175,17 @@ else if (getAWeek() == 1) {
 } else if (getAWeek() == 2) {
     if (rightNow.getDay() == 1) {
         dayArray = [
-            ["A Block starts", 30000000],
-            ["A Block ends", 34200000],
-            ["B Block starts", 34500000],
-            ["B Block ends", 38100000],
-            ["C Block/Lunch A starts", 38400000],
-            ["C ends @ 12:20, Lunch A ends", 39900000],
-            ["C ends @ 12:20, Lunch B starts", 42600000],
-            ["C Block ends", 44400000],
-            ["F Block starts", 44700000],
-            ["F Block ends", 48900000],
-            ["G Block starts", 49200000],
-            ["G Block ends", 53400000]
+            
         ];
     }
     if (rightNow.getDay() == 2) {
         dayArray = [
-            ["A Block starts", 30000000],
-            ["A Block ends", 34200000],
-            ["T Block starts", 34500000],
-            ["T Block ends", 36600000],
-            ["E Block starts", 36900000],
-            ["E ends @ 12:00, Lunch A starts", 39300000],
-            ["E ends @ 12:00, Lunch A ends", 41100000],
-            ["E ends @ 12:00, Lunch B starts", 41100000],
-            ["E Block ends", 43200000],
-            ["F Block starts", 43500000],
-            ["F Block ends", 47700000],
-            ["G Block starts", 48000000],
-            ["G Block ends", 52200000]
+            
         ];
     }
     if (rightNow.getDay() == 3) {
         dayArray = [
-            ["C Block starts", 30000000],
-            ["C Block ends", 33600000],
-            ["D Block starts", 33900000],
-            ["D Block ends", 37500000],
-            ["E Block starts", 37800000],
-            ["E Block ends", 41400000]
+            
         ];
     }
 }
