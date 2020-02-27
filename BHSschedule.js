@@ -67,7 +67,7 @@ if (getAWeek() == 0) {
             ["G Block starts", 43200000],
             ["G ends @ 1:35, Lunch B ends", 44700000],
             ["G ends @ 1:35, Lunch A starts", 45000000],
-            ["D ends @ 1:35, Lunch A ends", 46800000],
+            ["G ends @ 1:35, Lunch A ends", 46800000],
             ["G Block ends", 48900000],
             ["F Block starts", 49200000],
             ["F Block ends", 53100000]
