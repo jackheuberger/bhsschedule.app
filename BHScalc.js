@@ -126,7 +126,7 @@ function calcTime(dayMap, id) {
 
 
 // Set the date we're counting down to
-var countDownDate = new Date("May 29, 2020 14:45:0").getTime();
+var countDownDate = new Date("May 28, 2021 14:45:0").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
